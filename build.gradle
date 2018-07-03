@@ -10,6 +10,7 @@ buildscript {
 }
 
 apply plugin: 'java'
+apply plugin: 'groovy'
 apply plugin: 'application'
 apply plugin: 'com.github.johnrengelman.shadow'
 
@@ -23,8 +24,9 @@ sourceCompatibility = '1.8'
 mainClassName = 'io.vertx.core.Launcher'
 
 dependencies {
-  compile 'io.vertx:vertx-core:3.4.1'
-  compile 'io.vertx:vertx-lang-groovy:3.4.1'
+  compile 'io.vertx:vertx-core:3.5.1'
+  compile 'io.vertx:vertx-lang-groovy:3.5.1'
+  compile 'io.vertx:vertx-hazelcast:3.5.1'
 }
 
 shadowJar {
